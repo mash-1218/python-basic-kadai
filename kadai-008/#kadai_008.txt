@@ -1,0 +1,15 @@
+#kadai_008
+#ランダムな整数を利用するために、randomモジュールをインポート
+import random
+#変数varに１～３０までのランダムな整数を代入する。
+var = random.randint(1,30)
+#正の整数varが３の倍数かつ５の倍数ならば「FizzBuzz」、３の倍数ならば「Fizz」、５の倍数ならば「Buzz」、それ以外はvarを出力する。
+
+if var % 3 == 0 and var % 5 == 0:
+    print("FizzBuzz")
+elif var % 3 == 0:
+    print("Fizz")
+elif var % 5 == 0:
+    print("Buzz")
+else:
+    print(var)
